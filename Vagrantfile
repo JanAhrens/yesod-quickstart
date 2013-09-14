@@ -92,7 +92,25 @@ Vagrant.configure("2") do |config|
   # end
 
   config.vm.provision :chef_solo do |chef|
+    chef.add_recipe 'apt'
     chef.add_recipe 'git'
+    chef.add_recipe 'haskell::source'
+
+    chef.json = {
+      travis_build_environment: {
+        user: 'vagrant',
+        group: 'vagrant',
+        home: '/home/vagrant'
+      },
+      ghc: {
+        version: '7.6.3'
+      },
+      haskell: {
+        platform: {
+          version: '2013.2.0.0'
+        }
+      }
+    }
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,

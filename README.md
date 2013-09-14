@@ -10,7 +10,10 @@ It's using [Chef](http://www.opscode.com/chef/) to provision the VM.
 ## Requirements
 
 1. Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
-2. Install Vagrant (**don't** use the Ruby Gem): http://downloads.vagrantup.com/
+2. Install Vagrant using your package manager.
+   **Don't use** the Ruby Gem.
+   It's outdated and not compatible with Berkshelf Vagrant:
+   http://downloads.vagrantup.com/
 3. Install the [Berkshelf Vagrant plugin](https://github.com/RiotGames/vagrant-berkshelf):
    `vagrant plugin install vagrant-berkshelf`
 
@@ -18,10 +21,11 @@ It's using [Chef](http://www.opscode.com/chef/) to provision the VM.
 
 Once the requirements are installed, you can use this like any other Vagrant VM:
 
-* To create the VM or start an existing VM run `vagrant up`
-* To destroy a VM run `vagrant destroy`
-* If you want to reboot the VM run `vagrant reload`
-* A VM shutdown can be done with `vagrant halt`
+* Create the VM or start an existing VM: `vagrant up`
+* Connect to the VM: `vagrant ssh`
+* Destroy the VM: `vagrant destroy`
+* Reboot the VM: `vagrant reload`
+* Shutdown the VM: `vagrant halt`
 
 If you need more information or want to tweak the configuration, have
 a look at the [Vagrant Documentation](http://docs.vagrantup.com/v2/).
