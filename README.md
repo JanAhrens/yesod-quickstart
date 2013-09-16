@@ -3,9 +3,10 @@
 Yesod quickstart is a basic [Vagrant](http://vagrantup.com/)
 configuration that will create an Ubuntu virtual machine with the
 current [Haskell Platform](http://hackage.haskell.org/platform/).
-It'll also setup [Cabal](http://www.haskell.org/cabal/) and [Yesod](http://www.yesodweb.com/).
+It'll also setup [Cabal](http://www.haskell.org/cabal/) and install [Yesod](http://www.yesodweb.com/).
 
-It's using [Chef](http://www.opscode.com/chef/) to provision the VM.
+This package will install [GHC 7.6.3](http://www.haskell.org/ghc/docs/7.6.3/html/users_guide/release-7-6-3.html)
+and [The Haskell Platform 2013.2.0.0](http://www.haskell.org/platform/changelog.html).
 
 ## Requirements
 
