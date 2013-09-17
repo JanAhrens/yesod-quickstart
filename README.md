@@ -7,6 +7,8 @@ It'll also setup [Cabal](http://www.haskell.org/cabal/) and install [Yesod](http
 
 This package will install [GHC 7.6.3](http://www.haskell.org/ghc/docs/7.6.3/html/users_guide/release-7-6-3.html)
 and [The Haskell Platform 2013.2.0.0](http://www.haskell.org/platform/changelog.html).
+GHC and the Haskell Platform will be compiled. The same applies to Yesod,
+so expect the initial setup process to take 30 - 60 minutes (depending on your host machine and internet connection).
 
 ## Requirements
 
