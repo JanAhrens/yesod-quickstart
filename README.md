@@ -1,4 +1,4 @@
-# yesod-quickstart
+# Yesod quickstart
 
 Yesod quickstart is a basic [Vagrant](http://vagrantup.com/)
 configuration that will create an Ubuntu virtual machine with the
